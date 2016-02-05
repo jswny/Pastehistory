@@ -1,0 +1,24 @@
+@media screen and (max-width: 768px) {
+  #container {
+    min-width: 200px;
+    max-width: 900px;
+    margin: 2%;
+    position: relative;
+  }
+
+  .responsive-td {
+    display: none;
+  }
+
+  #archive-table td {
+    padding: 5px;
+  }
+}
+
+@media only screen and (min-width : 769px) {
+  #container {
+    min-width: 200px;
+    max-width: 900px;
+    margin: 10%;
+  }
+}

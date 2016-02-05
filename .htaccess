@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ http://%1/$1 [R=301,L]
+
+AuthUserFile htaccess/pastehistory.htpasswd
+AuthType Basic
+AuthName "Admin Access"
+
+<Files "admin.php">
+  Require valid-user
+</Files>
